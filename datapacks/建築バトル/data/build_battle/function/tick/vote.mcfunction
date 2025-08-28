@@ -1,4 +1,4 @@
-scoreboard players remove #vote time 1
+execute if score #vote time matches ..6000 run scoreboard players remove #vote time 1
 
 execute store result bossbar build_battle:vote value run scoreboard players get #vote time
 
