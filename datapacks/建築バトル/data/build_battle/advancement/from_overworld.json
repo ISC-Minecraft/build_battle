@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "from_overworld": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld"
+      }
+    }
+  }
+}

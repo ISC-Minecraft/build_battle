@@ -1,6 +1,8 @@
 gamerule doDaylightCycle false
 gamerule keepInventory true
 gamerule doWeatherCycle false
+gamerule tntExplodes false
+gamerule doImmediateRespawn true
 
 defaultgamemode adventure
 time set day
@@ -9,7 +11,13 @@ gamemode creative @a[tag=adomin]
 clear @a writable_book
 function build_battle:load/book
 
-tag @a remove adomin
+forceload remove all
+forceload add 32 -241
+forceload add -32 -241
+forceload add -96 -241
+forceload add -160 -241
+
+function build_battle:0/admin_
 tag @a remove player
 tag @a remove end
 tag @a remove vote

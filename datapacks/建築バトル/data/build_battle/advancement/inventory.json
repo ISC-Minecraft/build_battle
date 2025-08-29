@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "inventricheck": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "rewards": {
+    "function": "build_battle:advance/1tick"
+  }
+}

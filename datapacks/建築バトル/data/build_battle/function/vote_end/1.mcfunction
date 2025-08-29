@@ -1,4 +1,4 @@
-execute as @e[tag=true] at @s if entity @a[tag=vote,dx=-48,dy=44,dz=-48] at @s run function build_battle:vote_end/2
+execute as @e[type=marker,tag=true] at @s if entity @a[tag=vote,dx=-48,dy=44,dz=-48] at @s run function build_battle:vote_end/2
 
 tellraw @a[tag=vote,tag=!Builder] {text:"そこは投票無効エリアです",color:red}
 tellraw @a[tag=vote,tag=Builder] {text:"自分の建築には投票できません！！",color:red}

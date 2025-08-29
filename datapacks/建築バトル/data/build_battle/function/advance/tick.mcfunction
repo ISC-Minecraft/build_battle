@@ -1,0 +1,1 @@
+execute as @a[advancements={build_battle:from_overworld=true}] in overworld run function build_battle:advance/overworld

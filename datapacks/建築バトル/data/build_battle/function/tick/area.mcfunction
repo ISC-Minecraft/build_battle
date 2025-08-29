@@ -1,1 +1,1 @@
-execute as @e[tag=true] at @s unless entity @p[tag=player,dx=-48,dy=44,dz=-48] run function build_battle:start/3
+execute as @e[type=marker,tag=true] at @s unless entity @p[tag=player,dx=-48,dy=44,dz=-48] run function build_battle:start/3
