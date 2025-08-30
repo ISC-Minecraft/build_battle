@@ -1,5 +1,6 @@
 tag @a[tag=!adomin] add player
 tag @a add regular
+kill @e[type=!marker,type=!player]
 
 #一段目
 fill 32 -59 256 -17 -49 207 air

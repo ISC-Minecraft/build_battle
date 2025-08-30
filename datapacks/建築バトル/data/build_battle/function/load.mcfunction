@@ -41,7 +41,8 @@ scoreboard objectives add GlobalID dummy
 scoreboard objectives add game dummy
 scoreboard objectives add score dummy "得点"
 scoreboard objectives add 500 dummy
-scoreboard players set $500 500 500
+scoreboard players set $500 500 800
+scoreboard objectives add 0 dummy
 
 scoreboard objectives setdisplay sidebar score
 
