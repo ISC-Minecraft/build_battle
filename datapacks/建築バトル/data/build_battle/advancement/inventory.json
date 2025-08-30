@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "build_battle:advance/1tick"
+    "function": "build_battle:advance/clear"
   }
 }

@@ -1,7 +1,5 @@
 execute if score #count time matches 1.. run scoreboard players add #count time 1
 
-execute if score #count time matches 2 run title @a title {"text":"お題: ","color":"blue","extra":[{"nbt":"theme.text","storage":"build_battle:theme"}]}
-
 execute if score #count time matches 2 run title @a subtitle {"text":"5","color":"red"}
 execute if score #count time matches 22 run title @a subtitle {"text":"4","color":"red"}
 execute if score #count time matches 42 run title @a subtitle {"text":"3","color":"red"}

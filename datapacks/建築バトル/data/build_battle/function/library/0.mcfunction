@@ -1,6 +1,10 @@
-$data modify storage build_battle:theme theme set from storage build_battle: game.[$(random)]
-$data remove storage build_battle: game.[$(random)]
+data modify storage build_battle: default set value 3
 
-execute store result score $cnt cnt if data storage build_battle: game[]
-scoreboard players operation $cnt cnt -= $1 cnt
-execute store result storage build_battle: cnt int 1 run scoreboard players get $cnt cnt
+data modify storage build_battle:theme theme append value {text:"犬"}
+data modify storage build_battle:theme theme append value {text:"猫"}
+data modify storage build_battle:theme theme append value {text:"車"}
+data modify storage build_battle:theme theme append value {text:"家"}
+data modify storage build_battle:theme theme append value {text:"スポーツ"}
+data modify storage build_battle:theme theme append value {text:"レストラン"}
+data modify storage build_battle:theme theme append value {text:"宇宙"}
+data modify storage build_battle:theme theme append value {text:"アメリカ"}

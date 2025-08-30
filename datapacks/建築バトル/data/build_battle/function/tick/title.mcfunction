@@ -1,0 +1,1 @@
+title @a actionbar {"text":"お題: ","color":"blue","extra":[{"nbt":"game.text","storage":"build_battle:"}]}
