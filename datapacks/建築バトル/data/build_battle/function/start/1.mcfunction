@@ -5,9 +5,9 @@ execute as @e[type=marker,tag=true] at @s store result score @s PID run scoreboa
 function build_battle:start/2
 bossbar set build_battle:time visible true
 bossbar set build_battle:time players @a
-scoreboard players set #timer time 12000
+scoreboard players set #timer time 18000
 
-scoreboard players set #timer mm 9
+scoreboard players set #timer mm 14
 scoreboard players set #timer ss 59
 scoreboard players set #timer 20 20
 

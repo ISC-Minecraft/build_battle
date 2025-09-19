@@ -33,7 +33,9 @@ scoreboard objectives add cnt dummy
 scoreboard players set $1 cnt 1
 scoreboard objectives add theme dummy
 scoreboard objectives add time dummy
+scoreboard players set $12000 time 12000
 scoreboard objectives add mm dummy
+scoreboard players set $10 mm 10
 scoreboard objectives add ss dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add PID dummy
@@ -43,13 +45,18 @@ scoreboard objectives add score dummy "得点"
 scoreboard objectives add 500 dummy
 scoreboard players set $500 500 800
 scoreboard objectives add 0 dummy
+scoreboard objectives add carrot used:carrot_on_a_stick
+scoreboard objectives add warped used:warped_fungus_on_a_stick
+scoreboard objectives add cnt2 dummy
+scoreboard players set $2 cnt2 2
+scoreboard players reset $number cnt
 
 scoreboard objectives setdisplay sidebar score
 
 function build_battle:start/2
 function build_battle:vote/2
 
-data modify storage build_battle:time time set from storage build_battle:time {mm:10,ss:59}
+data modify storage build_battle:time time set from storage build_battle:time {mm:15,ss:59}
 data modify storage build_battle:vote time set from storage build_battle:vote {mm:5,ss:59}
 
 function build_battle:library/6 {lib:0}

@@ -1,5 +1,5 @@
 # 1. 残り時間を1減らす
-execute if score #timer time matches ..12000 run scoreboard players remove #timer time 1
+execute if score #timer time matches ..40000 run scoreboard players remove #timer time 1
 
 # 2. ボスバーの値を更新
 execute store result bossbar build_battle:time value run scoreboard players get #timer time

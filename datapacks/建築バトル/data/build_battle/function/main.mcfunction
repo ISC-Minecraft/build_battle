@@ -3,6 +3,7 @@ function build_battle:tick/time
 function build_battle:tick/area
 function build_battle:tick/vote
 function build_battle:tick/creative
+function build_battle:tick/complete
 
 execute if data storage build_battle:build build run function build_battle:tick/title
 
